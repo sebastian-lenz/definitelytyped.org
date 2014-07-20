@@ -298,11 +298,13 @@ nav.menu a { color: black; text-decoration: none; }
 nav.menu a:hover { text-decoration: underline; }
 
 #repository-search { background-color: #eeeeee; padding: 30px 0; margin-bottom: 1px; }
-#repository-search input { width: 100%; background-color: transparent; border-color: black; border-style: solid; border-width: 0 0 1px 0; outline: none; }
+#repository-search input { width: 100%; background-color: transparent; border-color: black; border-style: solid; border-width: 0 0 1px 0; border-radius: 0; outline: none; }
 
-#repository-list li { overflow: hidden; padding: 10px; border-bottom: 1px solid white; background-color: #eeeeee; -webkit-transition: background-color 0.2s, height 0.2s; transition: background-color 0.2s, height 0.2s; }
+#repository-list li { overflow: hidden; border-bottom: 1px solid white; background-color: #eeeeee; -webkit-transition: background-color 0.2s, height 0.2s; transition: background-color 0.2s, height 0.2s; }
+#repository-list li .header { padding: 10px; }
 #repository-list li .header a { color: black; text-decoration: none; }
-#repository-list li .details { position: absolute; left: 10px; right: 10px; padding: 20px 0; visibility: hidden; }
+#repository-list li .details { position: absolute; width: 100%; visibility: hidden; }
+#repository-list li .details .row { margin-top: 20px; }
 #repository-list li.expanded { background-color: white; border-bottom-color: #eeeeee; }
 #repository-list li.expanded .details { position: static; visibility: visible; }
 #repository-list li.expanding .details { -webkit-animation: fade-in 0.2s; animation: fade-in 0.2s; }

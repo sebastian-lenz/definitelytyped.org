@@ -194,6 +194,7 @@ var dt;
 
         RepositoryList.prototype.setQuery = function (query) {
             var _this = this;
+            query = query.toLowerCase();
             dt.repository.get(function (data) {
                 _this.setCollection(_(data.content).filter(function (content) {
                     return content.name.indexOf(query) != -1;
