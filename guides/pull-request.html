@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Pull Requests | DefinitelyTyped</title>
+	<meta name="description" content="The repository for high quality TypeScript type definitions" />
+	<meta name="keywords" content="typescript, type, definition, declaration, repository, typing" />
+
+	<meta name="generator" content="DocPad v6.64.3" />
+	<link  rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat" /><link  rel="stylesheet" href="/assets/css/main.css" />
+
+	<link rel="shortcut icon" href="/favicon.ico" >
+</head>
+<body class="ui">
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header>
+    <div class="container">
+        <a class="logo" href="/"><img src="/assets/images/dt-logo-smallish.png" title="DefinitelyTyped" width="73" height="73" /></a>
+        <nav>
+            <ul>
+                <li><a  href="/">Home</a></li>
+                <li><a class="current" href="/guides/contributing.html">Guides</a></li>
+                <li><a  href="/directory/learn.html">Directory</a></li>
+                <li><a  href="/pages/badges.html">Pages</a></li>
+                <li><a href="https://github.com/borisyankov/DefinitelyTyped">Repository</a></li>
+                <li><a href="http://www.tsdpm.com">TSD</a></li>
+                <li><a href="http://nuget.org/packages?q=DefinitelyTyped">NuGet</a></li>
+            </ul>
+        </nav>
+
+        
+            <h1>Pull Requests</h1>
+        
+    </div>
+</header>
+
+<div class="container main">
+    <div class="row">
+        <div class="col-3">
+            
+
+<nav class="menu">
+    
+    <ul>
+        
+            <li>
+                
+                    <a href="/guides/contributing.html">Contribution guide</a>
+                
+                
+            </li>
+        
+            <li>
+                
+                    <a href="/guides/creating.html">Creating a definition file</a>
+                
+                
+            </li>
+        
+            <li class="selected">
+                
+                    <strong>Pull Requests</strong>
+                
+                
+            </li>
+        
+            <li>
+                
+                    <a href="/guides/best-practices.html">Best practices</a>
+                
+                
+            </li>
+        
+    </ul>
+
+</nav>
+        </div>
+        <div class="col-9 typography">
+            <h2 id="getting-latest-upstream-changes">Getting latest upstream changes</h2>
+<p>You don&#39;t need to do this unless we request you to do so.</p>
+<p>Initially make sure you have DT added as an upstream remote in your fork. Do this by :</p>
+<pre><code>git remote <span class="hljs-built_in">add</span> upstream http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/borisyankov/DefinitelyTyped.git
+</code></pre><p>Now whenever you want the latest changes from DT added to your local branch just run these two commands :</p>
+<pre><code>git fetch upstream
+# Fetches any <span class="hljs-keyword">new</span> <span class="hljs-keyword">changes</span> from DefinitelyTyped
+git merge upstream/master
+# Merges any <span class="hljs-keyword">changes</span> fetched into your working <span class="hljs-keyword">files</span>
+</code></pre><h2 id="broken-build">Broken Build</h2>
+<p>If tests fail and you know how to fix them, just add a commit to fix that error in your local branch and push it to your DT fork. If the Pull Request uses the same branch it will be update automatically and the tests will run again.</p>
+<p>If you need multiple tries to make it work then please flatten your commits so the history is moderately clean (please also minimise the commit message). You could <code>git push --force</code> (<em>careful!</em>) the flat commit over your earlier commits in the same branch and the PR will be automatically updated.</p>
+<h2 id="multiple-contributions">Multiple contributions</h2>
+<p>It is recommended to split your contributions for different JS packages into their own git branches so you can have multiple pending PR&#39;s.</p>
+<h2 id="travis-ci-for-your-dt-fork">Travis CI for your DT fork</h2>
+<p>You can enable Travis for your own DT fork if you like: go to <a href="https://travis-ci.org/">Travis</a> and sign-up for free if you haven&#39;t yet. Then go to your <a href="https://travis-ci.org/profile">account</a> and enable your DT fork. This will run Travis same as on DT and allows you to experiment freely. You can review your fork&#39;s build status via the menu on the left side of the <a href="https://travis-ci.org/">Travis homepage</a> after you enabled the hook AND pushed some code to the repo.</p>
+<h2 id="large-contributions-and-changes">Large contributions and changes</h2>
+<p>If you plan to start a new definition make sure to check the issues first and/or leave a message that you are working on it so you&#39;re not do duplicating work. Coordination with fellow users is always recommended.</p>
+<p>If you think you need to make big changes to a existing definition it could be handy to review the git history and create a new Issue where you @mention previous authors and see if they agree and/or want to get involved again.</p>
+<h2 id="merging">Merging</h2>
+<p>DefinitelyTyped is managed by a group of enthusiasts who volunteer their free time to review and merge the contributions. This means it can potentially take a few days or up to a week before someone has the focus+time to look at a PR and merge it. If your contributions stays pending and get buried then feel free to politely ping/bump.</p>
+
+            <aside>
+    <hr />
+    <a href="https://github.com/DefinitelyTyped/definitelytyped.github.io/edit/source/src/documents/guides/pull-request.html.md.eco">Edit this page</a>
+    or read more in our
+	<a href="/pages/website-contributions.html">contribution guide</a>.
+</aside>
+        </div>
+    </div>
+</div>
+
+<footer class="wrap accent">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h2>Guides</h2>
+                <ul>
+                    
+                    <li><a href="/guides/best-practices.html">Best practices</a></li>
+                    
+                    <li><a href="/guides/pull-request.html">Pull Requests</a></li>
+                    
+                    <li><a href="/guides/creating.html">Creating a definition file</a></li>
+                    
+                    <li><a href="/guides/contributing.html">Contribution guide</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="col-3">
+                <h2>Directory</h2>
+                <ul>
+                    
+                    <li><a href="/directory/projects.html">Projects</a></li>
+                    
+                    <li><a href="/directory/libraries.html">Libraries</a></li>
+                    
+                    <li><a href="/directory/discuss.html">Discuss</a></li>
+                    
+                    <li><a href="/directory/tools.html">Tools & Editors</a></li>
+                    
+                    <li><a href="/directory/learn.html">Learn TypeScript</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="col-3">
+                <h2>Pages</h2>
+                <ul>
+                    
+                    <li><a href="/pages/language-issues.html">Language issues</a></li>
+                    
+                    <li><a href="/pages/website-contributions.html">Website contributions</a></li>
+                    
+                    <li><a href="/pages/badges.html">Badges</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="container">
+    <a href="/">Home</a>
+    - <a href="https://github.com/borisyankov/DefinitelyTyped">Github</a>
+    - <a href="http://www.tsdpm.com">TSD</a>
+    - <a href="http://nuget.org/packages?q=DefinitelyTyped">NuGet</a>
+</div>
+
+<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><script defer="defer"  src="/assets/js/main-min.js"></script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-47495295-3', 'definitelytyped.org');
+	ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
