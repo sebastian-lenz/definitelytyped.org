@@ -14,11 +14,7 @@ var dt;
         }
         return Application;
     })();
-
-    var app;
-    $(function () {
-        return app = new Application();
-    });
+    dt.Application = Application;
 })(dt || (dt = {}));
 var dt;
 (function (dt) {
@@ -289,4 +285,11 @@ var dt;
         }
     }
     dt.animateHeight = animateHeight;
+})(dt || (dt = {}));
+var dt;
+(function (dt) {
+    dt.app;
+    $(function () {
+        return dt.app = new dt.Application();
+    });
 })(dt || (dt = {}));
