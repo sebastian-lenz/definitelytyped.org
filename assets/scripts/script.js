@@ -1,7 +1,11 @@
+if (console && console.log) {
+	console.log('\n\nShow your stuff at https://github.com/DefinitelyTyped/definitelytyped.github.io\n\n');
+}
+
+
 /**
  * Repository search for definitelytyped.github.io
  */
-
 (function() {
     function getVendorInfo(tuples) {
         for (var name in tuples) {
@@ -13,7 +17,7 @@
         }
         return null;
     }
-    
+
     var transition = getVendorInfo({
         'transition': 'transitionend',
         'OTransition': 'oTransitionEnd',
@@ -21,7 +25,7 @@
         'MozTransition': 'transitionend',
         'WebkitTransition': 'webkitTransitionEnd'
     });
-    
+
     function noTransition($el, callback) {
         $el.addClass('no-transition');
         callback();
@@ -56,7 +60,7 @@
     function Repository(url) {
         this.url = url;
     }
-    
+
     Repository.prototype.load = function () {
         var _this = this;
         if (this.request || this.data)
@@ -85,10 +89,10 @@
             });
         }
     };
-    
+
     var repository = new Repository('/tsd/data/repository.json');
 
-    
+
     function RepositorySearch(el, list) {
         var _this = this;
         this.el = el;
@@ -110,7 +114,7 @@
         if (this.isPrompting && list)
             list.hide();
     }
-    
+
     RepositorySearch.prototype.getList = function () {
         if (!this.list) {
             var $el = $('<ul class="repository-list" />').insertAfter(this.el);
@@ -119,7 +123,7 @@
         return this.list;
     };
 
-    
+
     function RepositoryList(el) {
         var _this = this;
         this.el = el;
@@ -149,7 +153,7 @@
             return _this.setCollection(data.content);
         });
     }
-    
+
     RepositoryList.prototype.hide = function () {
         this.$el.hide();
         return this;
@@ -239,7 +243,7 @@
         this.render();
     };
 
-    
+
     $(function () {
         if (console && console.log) {
             console.log('\n\nShow your stuff at https://github.com/DefinitelyTyped/definitelytyped.github.io\n\n');

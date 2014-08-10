@@ -10,15 +10,11 @@
 	<meta name="keywords" content="typescript, type, definition, declaration, repository, typing" />
 
 	<meta name="generator" content="DocPad v6.64.3" />
-	<link  rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat" /><link  rel="stylesheet" href="/assets/css/main.css" />
+	<link  rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat" /><link  rel="stylesheet" href="/assets/styles/normalize.css" /><link  rel="stylesheet" href="/assets/styles/highlight.css" /><link  rel="stylesheet" href="/assets/styles/style.css" />
 
 	<link rel="shortcut icon" href="/favicon.ico" >
 </head>
 <body class="ui">
-
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
 
 <header>
     <div class="container">
@@ -83,7 +79,7 @@
 </nav>
         </div>
         <div class="col-9 typography">
-            <h2 id="getting-latest-upstream-changes">Getting latest upstream changes</h2>
+            <h2 id="getting-latest-upstream-changes"  class="ui header">Getting latest upstream changes</h2>
 <p>You don&#39;t need to do this unless we request you to do so.</p>
 <p>Initially make sure you have DT added as an upstream remote in your fork. Do this by :</p>
 <pre><code>git remote <span class="hljs-built_in">add</span> upstream http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/borisyankov/DefinitelyTyped.git
@@ -92,17 +88,17 @@
 # Fetches any <span class="hljs-keyword">new</span> <span class="hljs-keyword">changes</span> from DefinitelyTyped
 git merge upstream/master
 # Merges any <span class="hljs-keyword">changes</span> fetched into your working <span class="hljs-keyword">files</span>
-</code></pre><h2 id="broken-build">Broken Build</h2>
+</code></pre><h2 id="broken-build"  class="ui header">Broken Build</h2>
 <p>If tests fail and you know how to fix them, just add a commit to fix that error in your local branch and push it to your DT fork. If the Pull Request uses the same branch it will be update automatically and the tests will run again.</p>
 <p>If you need multiple tries to make it work then please flatten your commits so the history is moderately clean (please also minimise the commit message). You could <code>git push --force</code> (<em>careful!</em>) the flat commit over your earlier commits in the same branch and the PR will be automatically updated.</p>
-<h2 id="multiple-contributions">Multiple contributions</h2>
+<h2 id="multiple-contributions"  class="ui header">Multiple contributions</h2>
 <p>It is recommended to split your contributions for different JS packages into their own git branches so you can have multiple pending PR&#39;s.</p>
-<h2 id="travis-ci-for-your-dt-fork">Travis CI for your DT fork</h2>
+<h2 id="travis-ci-for-your-dt-fork"  class="ui header">Travis CI for your DT fork</h2>
 <p>You can enable Travis for your own DT fork if you like: go to <a href="https://travis-ci.org/">Travis</a> and sign-up for free if you haven&#39;t yet. Then go to your <a href="https://travis-ci.org/profile">account</a> and enable your DT fork. This will run Travis same as on DT and allows you to experiment freely. You can review your fork&#39;s build status via the menu on the left side of the <a href="https://travis-ci.org/">Travis homepage</a> after you enabled the hook AND pushed some code to the repo.</p>
-<h2 id="large-contributions-and-changes">Large contributions and changes</h2>
+<h2 id="large-contributions-and-changes"  class="ui header">Large contributions and changes</h2>
 <p>If you plan to start a new definition make sure to check the issues first and/or leave a message that you are working on it so you&#39;re not do duplicating work. Coordination with fellow users is always recommended.</p>
 <p>If you think you need to make big changes to a existing definition it could be handy to review the git history and create a new Issue where you @mention previous authors and see if they agree and/or want to get involved again.</p>
-<h2 id="merging">Merging</h2>
+<h2 id="merging"  class="ui header">Merging</h2>
 <p>DefinitelyTyped is managed by a group of enthusiasts who volunteer their free time to review and merge the contributions. This means it can potentially take a few days or up to a week before someone has the focus+time to look at a PR and merge it. If your contributions stays pending and get buried then feel free to politely ping/bump.</p>
 
             <aside>
@@ -173,7 +169,7 @@ git merge upstream/master
     - <a href="http://nuget.org/packages?q=DefinitelyTyped">NuGet</a>
 </div>
 
-<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><script defer="defer"  src="/assets/js/main-min.js"></script>
+<script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><script defer="defer"  src="/assets/scripts/underscore-min.js"></script><script defer="defer"  src="/assets/scripts/script.js"></script>
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
