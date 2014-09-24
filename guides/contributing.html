@@ -10,34 +10,31 @@
 	<meta name="keywords" content="typescript, type, definition, declaration, repository, typing" />
 
 	<meta name="generator" content="DocPad v6.64.3" />
-	<link  rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat" /><link  rel="stylesheet" href="/assets/styles/normalize.css" /><link  rel="stylesheet" href="/assets/styles/highlight.css" /><link  rel="stylesheet" href="/assets/styles/style.css" />
+	<link  rel="stylesheet" href="/assets/styles/normalize.css" /><link  rel="stylesheet" href="/assets/styles/highlight.css" /><link  rel="stylesheet" href="/assets/styles/style.css" />
 
 	<link rel="shortcut icon" href="/favicon.ico" >
 </head>
 <body class="ui">
 
-<header>
+<header class="dt-header">
     <div class="container">
-        <a class="logo" href="/"><img src="/assets/images/dt-logo-smallish.png" title="DefinitelyTyped" width="73" height="73" /></a>
-        <nav>
-            <ul>
-                <li><a  href="/">Home</a></li>
-                <li><a class="current" href="/guides/contributing.html">Guides</a></li>
-                <li><a  href="/directory/learn.html">Directory</a></li>
-                <li><a  href="/pages/badges.html">Pages</a></li>
-                <li><a href="https://github.com/borisyankov/DefinitelyTyped">Repository</a></li>
-                <li><a href="http://www.tsdpm.com">TSD</a></li>
-                <li><a href="http://nuget.org/packages?q=DefinitelyTyped">NuGet</a></li>
-            </ul>
-        </nav>
-
-        
-            <h1>Contribution guide</h1>
-        
+        <a class="logo" href="/">Definitely<strong>Typed</strong></a>
+<nav>
+    <ul>
+        <li><a class="current" href="/guides/contributing.html">Guides</a></li>
+        <li><a  href="/directory/learn.html">Directory</a></li>
+        <li><a  href="/pages/badges.html">Pages</a></li>
+    </ul>
+</nav>
     </div>
 </header>
 
 <div class="container main">
+    <div class="row">
+        <div class="col-12 typography">
+            <h1>Contribution guide</h1>
+        </div>
+    </div>
     <div class="row">
         <div class="col-3">
             
@@ -144,7 +141,7 @@
 </div></div>
 <div class="ui item">Depend on the automated test on Travis that runs after you send a PR.<div class="ui list"><div class="ui item">If you need many attempts to fix errors then please flatten the history and clean the commit message.</div>
 </div></div>
-</div><p>If you need to use <code>tscparams</code> note that the contents of tscparams should be quoted. i.e. &quot;&quot; e.g. <a href="https://github.com/borisyankov/DefinitelyTyped/blob/master/ace/all-tests.ts.tscparams">ace/all-tests.ts.tscparams</a></p>
+</div><p>You can use a <code>tscparams</code> file to specify custom compiler arguments e.g. <a href="https://github.com/borisyankov/DefinitelyTyped/blob/master/atom/atom-tests.ts.tscparams">atom/atom-tests.ts.tscparams</a></p>
 <h2 id="code-style"  class="ui header">Code style</h2>
 <div class="ui list"><div class="ui item">At this point we do not enforce a specific <em>general</em> code style, but we do like idiomatic code in each <em>individual</em> file.</div>
 <div class="ui item">When creating a new definition file the author is free to choose either tabs or 4-space indentation (<a href="https://github.com/borisyankov/DefinitelyTyped/issues/1709">discussion</a> on github).</div>
@@ -172,11 +169,11 @@
     </div>
 </div>
 
-<footer class="wrap accent">
+<footer class="dt-footer wrap">
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <h2>Guides</h2>
+                <h2 class="guides">Guides</h2>
                 <ul>
                     
                     <li><a href="/guides/best-practices.html">Best practices</a></li>
@@ -189,9 +186,8 @@
                     
                 </ul>
             </div>
-
             <div class="col-3">
-                <h2>Directory</h2>
+                <h2 class="directory">Directory</h2>
                 <ul>
                     
                     <li><a href="/directory/projects.html">Projects</a></li>
@@ -206,9 +202,8 @@
                     
                 </ul>
             </div>
-
             <div class="col-3">
-                <h2>Pages</h2>
+                <h2 class="pages">Pages</h2>
                 <ul>
                     
                     <li><a href="/pages/language-issues.html">Language issues</a></li>
@@ -219,15 +214,20 @@
                     
                 </ul>
             </div>
+            <div class="col-2 offset-1">
+                <ul class="quick">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://github.com/borisyankov/DefinitelyTyped">GitHub</a></li>
+                    <li><a href="/tsd/">TSD</a></li>
+                    <li><a href="http://www.nuget.org/packages?q=DefinitelyTyped">NuGet</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </footer>
 
 <div class="container">
-    <a href="/">Home</a>
-    - <a href="https://github.com/borisyankov/DefinitelyTyped">Github</a>
-    - <a href="http://www.tsdpm.com">TSD</a>
-    - <a href="http://nuget.org/packages?q=DefinitelyTyped">NuGet</a>
+    <p class="icons">DefinitelyTyped, an independent project about TypeScript.</p>
 </div>
 
 <script defer="defer"  src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><script defer="defer"  src="/assets/scripts/underscore-min.js"></script><script defer="defer"  src="/assets/scripts/script.js"></script>
