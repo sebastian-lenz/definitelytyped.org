@@ -68,7 +68,11 @@ var dt;
                 url: this.url
             }).then(function (data) {
                 _(data.content).forEach(function (content, id) {
-                    return content.id = id;
+                    content.id = id;
+                    content.sword = content.name.toLowerCase();
+                });
+                data.content.sort(function (a, b) {
+                    return a.sword == b.sword ? 0 : (a.sword > b.sword ? 1 : -1);
                 });
                 _this.data = data;
                 _this.request = null;
@@ -85,8 +89,20 @@ var dt;
         };
         Repository.prototype.query = function (sword, callback) {
             this.require(function (data) {
+                sword = sword.toLowerCase();
                 callback(_(data.content).filter(function (content) {
-                    return content.name.indexOf(sword) != -1;
+                    var n = content.name.indexOf(sword);
+                    content.score = (content.name == sword ? -1 : (n == 0 ? 0 : 1));
+                    return n != -1;
+                }).sort(function (a, b) {
+                    if(a.score == b.score) {
+                        if(a.name == b.name) {
+                            return 0;
+                        }
+                        return a.sword > b.sword ? 1 : -1;
+                    } else {
+                        return a.score > b.score ? 1 : -1;
+                    }
                 }));
             });
         };
@@ -147,7 +163,14 @@ var dt;
             this.$el.on('click', '.list-pagination a', function (e) {
                 _this.setPage(parseInt($(e.target).attr('data-page')));
                 e.preventDefault();
-            }).on('click', '.toggle', function (e) {
+            }).on('click', '.header', function (e) {
+                var el = e.target;
+                while(el.parentNode) {
+                    if(el.tagName == 'A') {
+                        return;
+                    }
+                    el = el.parentNode;
+                }
                 _this.setExpanded($(e.target));
                 e.preventDefault();
             }).on('click', '.expand', function (e) {
@@ -264,7 +287,9 @@ var dt;
                 var value = $.trim($query.val());
                 if(value == '') {
                     _this.list.setList([]);
+                    _this.$el.removeClass('has-sword');
                 } else {
+                    _this.$el.addClass('has-sword');
                     _this.repository.query(value, function (result) {
                         _this.list.setList(result);
                     });
@@ -273,6 +298,7 @@ var dt;
                 e.preventDefault();
                 if($query.val() != '') {
                     $query.val('').focus();
+                    _this.$el.removeClass('has-sword');
                     _this.list.setList([]);
                 } else {
                     $query.focus();
@@ -281,6 +307,7 @@ var dt;
                 e.preventDefault();
                 _this.repository.require(function (data) {
                     $query.val('');
+                    _this.$el.removeClass('has-sword');
                     _this.list.setList(data.content);
                 });
             });
