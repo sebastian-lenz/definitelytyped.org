@@ -4,81 +4,194 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Best practices | DefinitelyTyped</title>
 	<meta name="description" content="The repository for high quality TypeScript type definitions" />
 	<meta name="keywords" content="typescript, type, definition, declaration, repository, typing" />
+	<meta name="generator" content="DocPad v6.78.3" />
 
-	<meta name="generator" content="DocPad v6.64.3" />
-	<link  rel="stylesheet" href="/assets/styles/normalize.css" /><link  rel="stylesheet" href="/assets/styles/highlight.css" /><link  rel="stylesheet" href="/assets/styles/style.css" />
+	<title>Best practices | DefinitelyTyped</title>
 
+	<link  rel="stylesheet" href="/assets/styles/main.css" />
 	<link rel="shortcut icon" href="/favicon.ico" >
+
+	<![if lte IE 9]><script src="/assets/scripts/lib/html5shiv-min.js"></script><![endif]>
+	<![if lte IE 8]><script src="/assets/scripts/lib/respond-min.js"></script><![endif]>
 </head>
-<body class="ui">
+<body>
 
 <header class="dt-header">
     <div class="container">
-        <a class="logo" href="/">Definitely<strong>Typed</strong></a>
+        
+
 <nav>
-    <ul>
-        <li><a class="current" href="/guides/contributing.html">Guides</a></li>
-        <li><a  href="/directory/learn.html">Directory</a></li>
-        <li><a  href="/pages/badges.html">Pages</a></li>
-    </ul>
+	<a class="dt-header-logo" href="/"><span>Definitely<strong>Typed</strong></span></a>
+	<button class="menu-widget open">Menu</button>
+
+	<div class="dt-header-menu">
+		<div class="menu-header visible-xs">
+			<a class="dt-header-logo" href="/"><span>Definitely<strong>Typed</strong></span></a>
+			<button class="menu-widget close">Close</button>
+		</div>
+
+		<ul>
+			
+				<li class="parent guides">
+					<a href="/guides/contributing.html">Guides</a>
+					
+	<ul>
+		
+			<li>
+				<a href="/guides/contributing.html">Contribution guide</a>
+				
+			</li>
+		
+			<li>
+				<a href="/guides/pull-request.html">Pull Requests</a>
+				
+			</li>
+		
+			<li class="current">
+				<a href="/guides/best-practices.html">Best practices</a>
+				
+			</li>
+		
+	</ul>
+
+				</li>
+			
+				<li class=" directory">
+					<a href="/directory/learn.html">Directory</a>
+					
+	<ul>
+		
+			<li>
+				<a href="/directory/learn.html">Learn TypeScript</a>
+				
+			</li>
+		
+			<li>
+				<a href="/directory/tools.html">Tools &amp; Editors</a>
+				
+			</li>
+		
+			<li>
+				<a href="/directory/discuss.html">Discuss</a>
+				
+			</li>
+		
+			<li>
+				<a href="/directory/libraries.html">Libraries</a>
+				
+			</li>
+		
+			<li>
+				<a href="/directory/projects.html">Projects</a>
+				
+			</li>
+		
+	</ul>
+
+				</li>
+			
+				<li class=" pages">
+					<a href="/pages/badges.html">Pages</a>
+					
+	<ul>
+		
+			<li>
+				<a href="/pages/badges.html">Badges</a>
+				
+			</li>
+		
+			<li>
+				<a href="/pages/website-contributions.html">Website contributions</a>
+				
+			</li>
+		
+			<li>
+				<a href="/pages/language-issues.html">Language issues</a>
+				
+			</li>
+		
+	</ul>
+
+				</li>
+			
+		</ul>
+	</div>
 </nav>
+
     </div>
 </header>
 
-<div class="container main">
-    <div class="row">
-        <div class="col width-12 typography">
-            <h1>Best practices</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col width-3">
-            
+<div class="accent">
+	<div class="container">
+		<div class="row dt-breadcrumb-row">
+			<div class="col-md-12 typography">
+				
 
-<nav class="menu">
-    
+<ol class="dt-breadcrumb">
+	<li><a href="/index.html">Homepage</a></li>
+	
+	
+		
+			<li><a href="/guides/contributing.html">Guides</a></li>
+			
+	
+		
+	
+		
+	
+		
+	
+
+		
+	
+		
+	
+		
+	
+
+</ol>
+
+				<h1>Best practices</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row sticky-wrap">
+		<div class="col-md-3 sticky-container hidden-xs">
+			
+
+<nav class="dt-menu">
+	
     <ul>
         
             <li>
-                
-                    <a href="/guides/contributing.html">Contribution guide</a>
-                
-                
+				<a href="/guides/contributing.html">Contribution guide</a>
+				
             </li>
         
             <li>
-                
-                    <a href="/guides/creating.html">Creating a definition file</a>
-                
-                
+				<a href="/guides/pull-request.html">Pull Requests</a>
+				
             </li>
         
-            <li>
-                
-                    <a href="/guides/pull-request.html">Pull Requests</a>
-                
-                
-            </li>
-        
-            <li class="selected">
-                
-                    <strong>Best practices</strong>
-                
-                
+            <li class="current">
+				<a href="/guides/best-practices.html">Best practices</a>
+				
             </li>
         
     </ul>
 
 </nav>
-        </div>
-        <div class="col width-9 typography">
-            <p>This is a guide to the best practices to follow when creating typing files.  There are a variety of different ways that typing files can be constructed.  Different approaches can be used - this is intended as a guide to what approaches make sense in certain scenarios.</p>
+
+		</div>
+		<div class="col-md-9 typography">
+			<p>This is a guide to the best practices to follow when creating typing files.  There are a variety of different ways that typing files can be constructed.  Different approaches can be used - this is intended as a guide to what approaches make sense in certain scenarios.</p>
 <p>Also, it&#39;s a steer on how to deal with limitations in TypeScript.  As much as it hurts to say it, TypeScript v1.0 is not flawless.  There are certain minor flaws / shortcomings in the language which have implicatations for how typings are created.  Here we will detail those limitations, how they can be worked around at present and how you can best vote for improvements in the language on the <a href="//typescript.codeplex.com">TypeScript site</a>.</p>
-<h3 id="ghost-modules"  class="ui header">Ghost modules</h3>
+<h3 id="ghost-modules">Ghost modules</h3>
 <p>Also called <code>non-instantiated modules</code>. Instead of polluting the global namespace with many interfaces, it is okay to create a module that contains <em>interfaces only</em>. This does not introduce a variable on the global namespace (see safety in below sample) and this module can only be used for <em>types</em>.</p>
 <pre><code class="lang-typescript"><span class="hljs-comment">// this pattern has 3 name in top level</span>
 <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">NodeFoo</span> {</span> }
@@ -102,15 +215,7 @@
     <span class="hljs-keyword">export</span> = foo;
 }
 </code></pre>
-<h3 id="type-unions"  class="ui header">Type Unions</h3>
-<p>For config objects / object bags where a particular member can be one of many things (e.g. a number or a string), you will need to use <code>any</code> at the moment with a comment that might replace the <code>any</code> in a future TypeScript version.</p>
-<pre><code class="lang-typescript"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">FooConfig</span> {</span>
-    something: any; <span class="hljs-comment">// number | string</span>
-}
-<span class="hljs-keyword">declare</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span><span class="hljs-params">(config: FooConfig)</span>;</span>
-</code></pre>
-<p>There is a feature request open to <a href="https://typescript.codeplex.com/workitem/1364">add Type Unions to the language (vote)</a>.</p>
-<h3 id="extending-built-in-types"  class="ui header">Extending built-in types</h3>
+<h3 id="extending-built-in-types">Extending built-in types</h3>
 <p>There isn&#39;t a way to add <em>static members</em> to native objects at the moment as <code>lib.d.ts</code> defines them as a <code>var Date:{/*members*/}</code> and <code>var</code>s are not extendable.
  Two solutions are proposed to the TS team. Either <a href="https://typescript.codeplex.com/workitem/1085">use interfaces instead of var in lib.d.ts (vote)</a> and/or <a href="https://typescript.codeplex.com/workitem/917">make variables/classes open ended (vote)</a></p>
 <p>For adding members to <em>instances</em> of native types there are relevant interfaces in available in <code>lib.d.ts</code> e.g.</p>
@@ -123,7 +228,7 @@
 <span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
 foo.newMember = <span class="hljs-number">123</span>; <span class="hljs-comment">// okay</span>
 </code></pre>
-<h3 id="getter-setter"  class="ui header">Getter / Setter</h3>
+<h3 id="getter-setter">Getter / Setter</h3>
 <p>Instead of :</p>
 <pre><code class="lang-typescript"><span class="hljs-keyword">declare</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">duration</span><span class="hljs-params">(value?: number)</span><span class="hljs-type">: any</span>;</span>
 </code></pre>
@@ -131,14 +236,14 @@ foo.newMember = <span class="hljs-number">123</span>; <span class="hljs-comment"
 <pre><code class="lang-typescript"><span class="hljs-keyword">declare</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">duration</span><span class="hljs-params">()</span><span class="hljs-type">: number</span>;</span>
 <span class="hljs-keyword">declare</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">duration</span><span class="hljs-params">(value: number)</span><span class="hljs-type">: void</span>;</span>
 </code></pre>
-<h3 id="fluent"  class="ui header">Fluent</h3>
+<h3 id="fluent">Fluent</h3>
 <p>Pretty self explanatory:</p>
 <pre><code class="lang-typescript"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Something</span> {</span>
    foo(): Something;
    bar(): Something;
 }
 </code></pre>
-<h3 id="callback-signatures"  class="ui header">Callback signatures</h3>
+<h3 id="callback-signatures">Callback signatures</h3>
 <p>Do not mark callback arguments as optional if they are passed in everytime by the calling code. Also leave the return as <code>any</code> if the calling code doesn&#39;t care. For example in the following <em>good</em> declaration <code>foo</code> is the calling code we are declaring that always calls with <code>bar</code> and <code>bas</code> and doesn&#39;t care of the callback return value:</p>
 <pre><code class="lang-typescript">declare function foo(callback: (bar: any, bas: any) =&gt; any): void;
 
@@ -150,7 +255,7 @@ foo((bar, bas) =&gt; '');
 <p>A <em>wrong</em> way to model it would be as shown below as it enforces restrictions the original calling code doesn&#39;t impose:</p>
 <pre><code class="lang-typescript">declare function foo(callback: (bar?: any, bas?: any) =&gt; void);
 </code></pre>
-<h3 id="function-overloading"  class="ui header">Function Overloading</h3>
+<h3 id="function-overloading">Function Overloading</h3>
 <p>A Union Type (<code>any</code> for now) is needed only for config object bags. For functions / constructors use function overloading e.g.</p>
 <pre><code class="lang-typescript"><span class="hljs-keyword">declare</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> {</span>
     constructor(foo: number);
@@ -161,7 +266,7 @@ foo((bar, bas) =&gt; '');
 <span class="hljs-keyword">new</span> Foo(<span class="hljs-string">'123'</span>); <span class="hljs-comment">// okay</span>
 <span class="hljs-keyword">new</span> Foo(<span class="hljs-literal">true</span>); <span class="hljs-comment">// Error</span>
 </code></pre>
-<h3 id="overload-ordering"  class="ui header">Overload Ordering</h3>
+<h3 id="overload-ordering">Overload Ordering</h3>
 <p>Code with overloads <em>must</em> be manually sorted from the tightest/more-specific overload to loosest. See example below:</p>
 <pre><code class="lang-typescript"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Parent</span> {</span> x; }
 <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Child</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Parent</span> {</span> y; }
@@ -179,62 +284,71 @@ foo((bar, bas) =&gt; '');
 </code></pre>
 <p><a href="https://typescript.codeplex.com/workitem/2442">Related issue on Codeplex(vote)</a></p>
 
-            <aside>
+			<aside>
     <hr />
-    <a href="https://github.com/DefinitelyTyped/definitelytyped.github.io/edit/source/src/documents/guides/best-practices.html.md.eco">Edit this page</a>
+    <a href="https://github.com/DefinitelyTyped/definitelytyped.github.io/edit/source/src/documents/guides/best-practices.html.md">Edit this page</a>
     or read more in our
 	<a href="/pages/website-contributions.html">contribution guide</a>.
 </aside>
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
 
-<footer class="dt-footer wrap">
+<footer class="dt-footer">
     <div class="container">
         <div class="row">
-            <div class="col width-3">
-                <h2 class="guides">Guides</h2>
-                <ul>
-                    
-                    <li><a href="/guides/best-practices.html">Best practices</a></li>
-                    
-                    <li><a href="/guides/pull-request.html">Pull Requests</a></li>
-                    
-                    <li><a href="/guides/creating.html">Creating a definition file</a></li>
-                    
-                    <li><a href="/guides/contributing.html">Contribution guide</a></li>
-                    
-                </ul>
-            </div>
-            <div class="col width-3">
-                <h2 class="directory">Directory</h2>
-                <ul>
-                    
-                    <li><a href="/directory/projects.html">Projects</a></li>
-                    
-                    <li><a href="/directory/libraries.html">Libraries</a></li>
-                    
-                    <li><a href="/directory/discuss.html">Discuss</a></li>
-                    
-                    <li><a href="/directory/tools.html">Tools & Editors</a></li>
-                    
-                    <li><a href="/directory/learn.html">Learn TypeScript</a></li>
-                    
-                </ul>
-            </div>
-            <div class="col width-3">
-                <h2 class="pages">Pages</h2>
-                <ul>
-                    
-                    <li><a href="/pages/language-issues.html">Language issues</a></li>
-                    
-                    <li><a href="/pages/website-contributions.html">Website contributions</a></li>
-                    
-                    <li><a href="/pages/badges.html">Badges</a></li>
-                    
-                </ul>
-            </div>
-            <div class="col width-3">
+			
+				<div class="col-md-3 col-sm-6">
+					<h2 class="guides">Guides</h2>
+					
+						<ul>
+							
+								<li><a href="/guides/contributing.html">Contribution guide</a></li>
+							
+								<li><a href="/guides/pull-request.html">Pull Requests</a></li>
+							
+								<li><a href="/guides/best-practices.html">Best practices</a></li>
+							
+						</ul>
+					
+				</div>
+			
+				<div class="col-md-3 col-sm-6">
+					<h2 class="directory">Directory</h2>
+					
+						<ul>
+							
+								<li><a href="/directory/learn.html">Learn TypeScript</a></li>
+							
+								<li><a href="/directory/tools.html">Tools &amp; Editors</a></li>
+							
+								<li><a href="/directory/discuss.html">Discuss</a></li>
+							
+								<li><a href="/directory/libraries.html">Libraries</a></li>
+							
+								<li><a href="/directory/projects.html">Projects</a></li>
+							
+						</ul>
+					
+				</div>
+			
+				<div class="col-md-3 col-sm-6">
+					<h2 class="pages">Pages</h2>
+					
+						<ul>
+							
+								<li><a href="/pages/badges.html">Badges</a></li>
+							
+								<li><a href="/pages/website-contributions.html">Website contributions</a></li>
+							
+								<li><a href="/pages/language-issues.html">Language issues</a></li>
+							
+						</ul>
+					
+				</div>
+			
+
+            <div class="col-md-3 col-sm-6">
                 <ul class="quick">
                     <li><a href="/">Home</a></li>
                     <li><a href="https://github.com/borisyankov/DefinitelyTyped">GitHub</a></li>
@@ -246,11 +360,14 @@ foo((bar, bas) =&gt; '');
     </div>
 </footer>
 
-<div class="container">
-    <p class="icons">DefinitelyTyped, an independent project about TypeScript.</p>
-</div>
+<footer class="dt-love">
+    <div class="container">
+        <p class="icons">DefinitelyTyped, an independent project about TypeScript.</p>
+    </div>
+</footer>
 
-<script defer="defer"  src="/assets/scripts/lib/jquery-min.js"></script><script defer="defer"  src="/assets/scripts/lib/underscore-min.js"></script><script defer="defer"  src="/assets/scripts/repository.js"></script>
+
+<script defer="defer"  src="/assets/scripts/main-min.js"></script>
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -259,7 +376,6 @@ foo((bar, bas) =&gt; '');
 
 	ga('create', 'UA-47495295-3', 'definitelytyped.org');
 	ga('send', 'pageview');
-
 </script>
 
 

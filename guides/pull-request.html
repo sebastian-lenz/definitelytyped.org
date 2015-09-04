@@ -4,156 +4,278 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Pull Requests | DefinitelyTyped</title>
 	<meta name="description" content="The repository for high quality TypeScript type definitions" />
 	<meta name="keywords" content="typescript, type, definition, declaration, repository, typing" />
+	<meta name="generator" content="DocPad v6.78.3" />
 
-	<meta name="generator" content="DocPad v6.64.3" />
-	<link  rel="stylesheet" href="/assets/styles/normalize.css" /><link  rel="stylesheet" href="/assets/styles/highlight.css" /><link  rel="stylesheet" href="/assets/styles/style.css" />
+	<title>Pull Requests | DefinitelyTyped</title>
 
+	<link  rel="stylesheet" href="/assets/styles/main.css" />
 	<link rel="shortcut icon" href="/favicon.ico" >
+
+	<![if lte IE 9]><script src="/assets/scripts/lib/html5shiv-min.js"></script><![endif]>
+	<![if lte IE 8]><script src="/assets/scripts/lib/respond-min.js"></script><![endif]>
 </head>
-<body class="ui">
+<body>
 
 <header class="dt-header">
     <div class="container">
-        <a class="logo" href="/">Definitely<strong>Typed</strong></a>
+        
+
 <nav>
-    <ul>
-        <li><a class="current" href="/guides/contributing.html">Guides</a></li>
-        <li><a  href="/directory/learn.html">Directory</a></li>
-        <li><a  href="/pages/badges.html">Pages</a></li>
-    </ul>
+	<a class="dt-header-logo" href="/"><span>Definitely<strong>Typed</strong></span></a>
+	<button class="menu-widget open">Menu</button>
+
+	<div class="dt-header-menu">
+		<div class="menu-header visible-xs">
+			<a class="dt-header-logo" href="/"><span>Definitely<strong>Typed</strong></span></a>
+			<button class="menu-widget close">Close</button>
+		</div>
+
+		<ul>
+			
+				<li class="parent guides">
+					<a href="/guides/contributing.html">Guides</a>
+					
+	<ul>
+		
+			<li>
+				<a href="/guides/contributing.html">Contribution guide</a>
+				
+			</li>
+		
+			<li class="current">
+				<a href="/guides/pull-request.html">Pull Requests</a>
+				
+			</li>
+		
+			<li>
+				<a href="/guides/best-practices.html">Best practices</a>
+				
+			</li>
+		
+	</ul>
+
+				</li>
+			
+				<li class=" directory">
+					<a href="/directory/learn.html">Directory</a>
+					
+	<ul>
+		
+			<li>
+				<a href="/directory/learn.html">Learn TypeScript</a>
+				
+			</li>
+		
+			<li>
+				<a href="/directory/tools.html">Tools &amp; Editors</a>
+				
+			</li>
+		
+			<li>
+				<a href="/directory/discuss.html">Discuss</a>
+				
+			</li>
+		
+			<li>
+				<a href="/directory/libraries.html">Libraries</a>
+				
+			</li>
+		
+			<li>
+				<a href="/directory/projects.html">Projects</a>
+				
+			</li>
+		
+	</ul>
+
+				</li>
+			
+				<li class=" pages">
+					<a href="/pages/badges.html">Pages</a>
+					
+	<ul>
+		
+			<li>
+				<a href="/pages/badges.html">Badges</a>
+				
+			</li>
+		
+			<li>
+				<a href="/pages/website-contributions.html">Website contributions</a>
+				
+			</li>
+		
+			<li>
+				<a href="/pages/language-issues.html">Language issues</a>
+				
+			</li>
+		
+	</ul>
+
+				</li>
+			
+		</ul>
+	</div>
 </nav>
+
     </div>
 </header>
 
-<div class="container main">
-    <div class="row">
-        <div class="col width-12 typography">
-            <h1>Pull Requests</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col width-3">
-            
+<div class="accent">
+	<div class="container">
+		<div class="row dt-breadcrumb-row">
+			<div class="col-md-12 typography">
+				
 
-<nav class="menu">
-    
+<ol class="dt-breadcrumb">
+	<li><a href="/index.html">Homepage</a></li>
+	
+	
+		
+			<li><a href="/guides/contributing.html">Guides</a></li>
+			
+	
+		
+	
+		
+	
+		
+	
+
+		
+	
+		
+	
+		
+	
+
+</ol>
+
+				<h1>Pull Requests</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row sticky-wrap">
+		<div class="col-md-3 sticky-container hidden-xs">
+			
+
+<nav class="dt-menu">
+	
     <ul>
         
             <li>
-                
-                    <a href="/guides/contributing.html">Contribution guide</a>
-                
-                
+				<a href="/guides/contributing.html">Contribution guide</a>
+				
+            </li>
+        
+            <li class="current">
+				<a href="/guides/pull-request.html">Pull Requests</a>
+				
             </li>
         
             <li>
-                
-                    <a href="/guides/creating.html">Creating a definition file</a>
-                
-                
-            </li>
-        
-            <li class="selected">
-                
-                    <strong>Pull Requests</strong>
-                
-                
-            </li>
-        
-            <li>
-                
-                    <a href="/guides/best-practices.html">Best practices</a>
-                
-                
+				<a href="/guides/best-practices.html">Best practices</a>
+				
             </li>
         
     </ul>
 
 </nav>
-        </div>
-        <div class="col width-9 typography">
-            <h2 id="getting-latest-upstream-changes"  class="ui header">Getting latest upstream changes</h2>
+
+		</div>
+		<div class="col-md-9 typography">
+			<h2 id="getting-latest-upstream-changes">Getting latest upstream changes</h2>
 <p>You don&#39;t need to do this unless we request you to do so.</p>
 <p>Initially make sure you have DT added as an upstream remote in your fork. Do this by :</p>
-<pre><code>git remote <span class="hljs-built_in">add</span> upstream http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/borisyankov/DefinitelyTyped.git
+<pre><code>git remote add upstream &lt;<span class="hljs-variable">%-</span> <span class="hljs-variable">@site</span>.github <span class="hljs-variable">%&gt;</span>.git
 </code></pre><p>Now whenever you want the latest changes from DT added to your local branch just run these two commands :</p>
 <pre><code>git fetch upstream
 # Fetches any new changes from DefinitelyTyped
 git <span class="hljs-operator"><span class="hljs-keyword">merge</span> upstream/<span class="hljs-keyword">master</span>
 # Merges <span class="hljs-keyword">any</span> changes fetched <span class="hljs-keyword">into</span> your working files</span>
-</code></pre><h2 id="broken-build"  class="ui header">Broken Build</h2>
+</code></pre><h2 id="broken-build">Broken Build</h2>
 <p>If tests fail and you know how to fix them, just add a commit to fix that error in your local branch and push it to your DT fork. If the Pull Request uses the same branch it will be update automatically and the tests will run again.</p>
 <p>If you need multiple tries to make it work then please flatten your commits so the history is moderately clean (please also minimise the commit message). You could <code>git push --force</code> (<em>careful!</em>) the flat commit over your earlier commits in the same branch and the PR will be automatically updated.</p>
-<h2 id="multiple-contributions"  class="ui header">Multiple contributions</h2>
+<h2 id="multiple-contributions">Multiple contributions</h2>
 <p>It is recommended to split your contributions for different JS packages into their own git branches so you can have multiple pending PR&#39;s.</p>
-<h2 id="travis-ci-for-your-dt-fork"  class="ui header">Travis CI for your DT fork</h2>
+<h2 id="travis-ci-for-your-dt-fork">Travis CI for your DT fork</h2>
 <p>You can enable Travis for your own DT fork if you like: go to <a href="https://travis-ci.org/">Travis</a> and sign-up for free if you haven&#39;t yet. Then go to your <a href="https://travis-ci.org/profile">account</a> and enable your DT fork. This will run Travis same as on DT and allows you to experiment freely. You can review your fork&#39;s build status via the menu on the left side of the <a href="https://travis-ci.org/">Travis homepage</a> after you enabled the hook AND pushed some code to the repo.</p>
-<h2 id="large-contributions-and-changes"  class="ui header">Large contributions and changes</h2>
+<h2 id="large-contributions-and-changes">Large contributions and changes</h2>
 <p>If you plan to start a new definition make sure to check the issues first and/or leave a message that you are working on it so you&#39;re not do duplicating work. Coordination with fellow users is always recommended.</p>
 <p>If you think you need to make big changes to a existing definition it could be handy to review the git history and create a new Issue where you @mention previous authors and see if they agree and/or want to get involved again.</p>
-<h2 id="merging"  class="ui header">Merging</h2>
+<h2 id="merging">Merging</h2>
 <p>DefinitelyTyped is managed by a group of enthusiasts who volunteer their free time to review and merge the contributions. This means it can potentially take a few days or up to a week before someone has the focus+time to look at a PR and merge it. If your contributions stays pending and get buried then feel free to politely ping/bump.</p>
 
-            <aside>
+			<aside>
     <hr />
-    <a href="https://github.com/DefinitelyTyped/definitelytyped.github.io/edit/source/src/documents/guides/pull-request.html.md.eco">Edit this page</a>
+    <a href="https://github.com/DefinitelyTyped/definitelytyped.github.io/edit/source/src/documents/guides/pull-request.html.md">Edit this page</a>
     or read more in our
 	<a href="/pages/website-contributions.html">contribution guide</a>.
 </aside>
-        </div>
-    </div>
+		</div>
+	</div>
 </div>
 
-<footer class="dt-footer wrap">
+<footer class="dt-footer">
     <div class="container">
         <div class="row">
-            <div class="col width-3">
-                <h2 class="guides">Guides</h2>
-                <ul>
-                    
-                    <li><a href="/guides/best-practices.html">Best practices</a></li>
-                    
-                    <li><a href="/guides/pull-request.html">Pull Requests</a></li>
-                    
-                    <li><a href="/guides/creating.html">Creating a definition file</a></li>
-                    
-                    <li><a href="/guides/contributing.html">Contribution guide</a></li>
-                    
-                </ul>
-            </div>
-            <div class="col width-3">
-                <h2 class="directory">Directory</h2>
-                <ul>
-                    
-                    <li><a href="/directory/projects.html">Projects</a></li>
-                    
-                    <li><a href="/directory/libraries.html">Libraries</a></li>
-                    
-                    <li><a href="/directory/discuss.html">Discuss</a></li>
-                    
-                    <li><a href="/directory/tools.html">Tools & Editors</a></li>
-                    
-                    <li><a href="/directory/learn.html">Learn TypeScript</a></li>
-                    
-                </ul>
-            </div>
-            <div class="col width-3">
-                <h2 class="pages">Pages</h2>
-                <ul>
-                    
-                    <li><a href="/pages/language-issues.html">Language issues</a></li>
-                    
-                    <li><a href="/pages/website-contributions.html">Website contributions</a></li>
-                    
-                    <li><a href="/pages/badges.html">Badges</a></li>
-                    
-                </ul>
-            </div>
-            <div class="col width-3">
+			
+				<div class="col-md-3 col-sm-6">
+					<h2 class="guides">Guides</h2>
+					
+						<ul>
+							
+								<li><a href="/guides/contributing.html">Contribution guide</a></li>
+							
+								<li><a href="/guides/pull-request.html">Pull Requests</a></li>
+							
+								<li><a href="/guides/best-practices.html">Best practices</a></li>
+							
+						</ul>
+					
+				</div>
+			
+				<div class="col-md-3 col-sm-6">
+					<h2 class="directory">Directory</h2>
+					
+						<ul>
+							
+								<li><a href="/directory/learn.html">Learn TypeScript</a></li>
+							
+								<li><a href="/directory/tools.html">Tools &amp; Editors</a></li>
+							
+								<li><a href="/directory/discuss.html">Discuss</a></li>
+							
+								<li><a href="/directory/libraries.html">Libraries</a></li>
+							
+								<li><a href="/directory/projects.html">Projects</a></li>
+							
+						</ul>
+					
+				</div>
+			
+				<div class="col-md-3 col-sm-6">
+					<h2 class="pages">Pages</h2>
+					
+						<ul>
+							
+								<li><a href="/pages/badges.html">Badges</a></li>
+							
+								<li><a href="/pages/website-contributions.html">Website contributions</a></li>
+							
+								<li><a href="/pages/language-issues.html">Language issues</a></li>
+							
+						</ul>
+					
+				</div>
+			
+
+            <div class="col-md-3 col-sm-6">
                 <ul class="quick">
                     <li><a href="/">Home</a></li>
                     <li><a href="https://github.com/borisyankov/DefinitelyTyped">GitHub</a></li>
@@ -165,11 +287,14 @@ git <span class="hljs-operator"><span class="hljs-keyword">merge</span> upstream
     </div>
 </footer>
 
-<div class="container">
-    <p class="icons">DefinitelyTyped, an independent project about TypeScript.</p>
-</div>
+<footer class="dt-love">
+    <div class="container">
+        <p class="icons">DefinitelyTyped, an independent project about TypeScript.</p>
+    </div>
+</footer>
 
-<script defer="defer"  src="/assets/scripts/lib/jquery-min.js"></script><script defer="defer"  src="/assets/scripts/lib/underscore-min.js"></script><script defer="defer"  src="/assets/scripts/repository.js"></script>
+
+<script defer="defer"  src="/assets/scripts/main-min.js"></script>
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -178,7 +303,6 @@ git <span class="hljs-operator"><span class="hljs-keyword">merge</span> upstream
 
 	ga('create', 'UA-47495295-3', 'definitelytyped.org');
 	ga('send', 'pageview');
-
 </script>
 
 
